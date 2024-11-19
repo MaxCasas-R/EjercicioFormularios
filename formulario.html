@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Fotos</title>
+    <style>
+        div { margin: 10px; }
+    </style>
+</head>
+<body>
+    <form method="post" action="http://localhost:8000/datos" enctype="multipart/form-data">
+        <div>Nombre: <input type="text" name="Nombre" /></div>        
+        <div>Direccion: <input type="text" name="Direccion" /></div>
+        <div>Fotografia: <input type="file" name="Fotografia" /></div>
+        
+        <!-- Checkboxes dentro del form -->
+        <div>
+            <input type="checkbox" id="vip" name="vip" value="true">
+            <label for="vip">Soy VIP</label><br>
+        </div>
+
+        <div><input type="submit" value="Enviar" /></div>
+    </form>
+</body>
+</html>
